@@ -1,0 +1,60 @@
+<svg width="760" height="720" viewBox="0 0 760 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="760" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#160824"/>
+      <stop offset="0.48" stop-color="#25104A"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="mail" x1="181" y1="211" x2="579" y2="285" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="0.6" stop-color="#EC4899"/>
+      <stop offset="1" stop-color="#F97316"/>
+    </linearGradient>
+    <filter id="cardShadow" x="110" y="140" width="540" height="530" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="27.5" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <rect width="760" height="720" fill="url(#bg)"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Microsoft YaHei',sans-serif">
+    <text x="165" y="131" fill="#FFFFFF" font-size="34" font-weight="900" letter-spacing="-1.7">永不失联</text>
+    <text x="165" y="164" fill="#CBD5E1" font-size="13" font-weight="400">收藏本页防迷路，点击线路进入</text>
+  </g>
+  <g filter="url(#cardShadow)" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Microsoft YaHei',sans-serif">
+    <rect x="165" y="195" width="430" height="414" rx="24" fill="#FFFFFF" fill-opacity="0.94"/>
+    <rect x="181" y="211" width="398" height="74" rx="18" fill="url(#mail)"/>
+    <text x="195" y="242" fill="#FFFFFF" font-size="15" font-weight="800">4@455555.XYZ</text>
+    <text x="195" y="266" fill="#FFE4F2" font-size="12" font-weight="500">发邮件 30 秒内自动回复最新地址</text>
+    <text x="181" y="321" fill="#111827" font-size="14" font-weight="800">选择线路进入</text>
+    <g>
+      <rect x="181" y="333" width="398" height="45" rx="14" fill="#FFFFFF" stroke="#EEEEEE"/>
+      <text x="193" y="361" fill="#111827" font-size="14" font-weight="700">455333.xyz</text>
+      <rect x="526" y="344" width="37" height="22" rx="11" fill="#F3E8FF"/>
+      <text x="544.5" y="360" text-anchor="middle" fill="#7C3AED" font-size="12" font-weight="700">进入</text>
+    </g>
+    <g>
+      <rect x="181" y="386" width="398" height="45" rx="14" fill="#FFFFFF" stroke="#EEEEEE"/>
+      <text x="193" y="414" fill="#111827" font-size="14" font-weight="700">466333.xyz</text>
+      <rect x="526" y="397" width="37" height="22" rx="11" fill="#F3E8FF"/>
+      <text x="544.5" y="413" text-anchor="middle" fill="#7C3AED" font-size="12" font-weight="700">进入</text>
+    </g>
+    <g>
+      <rect x="181" y="439" width="398" height="45" rx="14" fill="#FFFFFF" stroke="#EEEEEE"/>
+      <text x="193" y="467" fill="#111827" font-size="14" font-weight="700">477333.xyz</text>
+      <rect x="526" y="450" width="37" height="22" rx="11" fill="#F3E8FF"/>
+      <text x="544.5" y="466" text-anchor="middle" fill="#7C3AED" font-size="12" font-weight="700">进入</text>
+    </g>
+    <g>
+      <rect x="181" y="492" width="398" height="45" rx="14" fill="#FFFFFF" stroke="#EEEEEE"/>
+      <text x="193" y="520" fill="#111827" font-size="14" font-weight="700">488333.xyz</text>
+      <rect x="526" y="503" width="37" height="22" rx="11" fill="#F3E8FF"/>
+      <text x="544.5" y="519" text-anchor="middle" fill="#7C3AED" font-size="12" font-weight="700">进入</text>
+    </g>
+    <g>
+      <rect x="181" y="545" width="398" height="45" rx="14" fill="#FFFFFF" stroke="#EEEEEE"/>
+      <text x="193" y="573" fill="#111827" font-size="14" font-weight="700">安装到桌面</text>
+      <rect x="526" y="556" width="37" height="22" rx="11" fill="#F3E8FF"/>
+      <text x="544.5" y="572" text-anchor="middle" fill="#7C3AED" font-size="12" font-weight="700">PWA</text>
+    </g>
+  </g>
+  <text x="380" y="638" text-anchor="middle" fill="#94A3B8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,'Microsoft YaHei',sans-serif" font-size="11" font-weight="400">多收藏不同线路 · 建议截图保存</text>
+</svg>
