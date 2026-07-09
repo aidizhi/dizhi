@@ -1,53 +1,48 @@
 {
-  "name": "static-landing-page",
+  "name": "svg-vector-graphics",
   "version": "2.0.0",
-  "description": "High-performance static landing page with PWA support, multi-CDN deployment, and advanced SEO optimization",
+  "description": "Creative coding landing page with SVG vector graphics, SMIL animations, path morphing, and Neumorphism soft UI design",
   "private": true,
   "keywords": [
-    "static-site",
-    "landing-page",
-    "pwa",
-    "progressive-web-app",
-    "github-pages",
-    "cloudflare-pages",
-    "netlify",
+    "svg",
+    "vector-graphics",
+    "smil",
+    "path-morphing",
+    "creative-coding",
+    "neumorphism",
+    "soft-ui",
     "html5",
     "css3",
     "javascript",
+    "frontend",
+    "github-pages",
+    "static-site",
+    "landing-page",
     "responsive-design",
-    "mobile-first",
-    "offline-first",
-    "service-worker",
-    "web-app-manifest",
-    "seo",
-    "performance",
-    "cdn",
-    "high-availability",
-    "mirror-site",
-    "navigation",
-    "address-book"
+    "illustrator",
+    "inkscape",
+    "pwa"
   ],
-  "homepage": "https://github.com/aidizhi",
+  "homepage": "https://455555.xyz",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aidizhi/static-landing-page.git"
+    "url": "https://github.com/aidizhi/dizhi.git"
   },
   "bugs": {
-    "url": "https://github.com/aidizhi/static-landing-page/issues"
+    "url": "https://github.com/aidizhi/dizhi/issues"
   },
   "license": "MIT",
-  "author": "永不失联",
+  "author": "Vector Graphics Team",
   "scripts": {
     "dev": "npx serve . -l 8080",
     "build": "node scripts/build.js",
-    "lint": "npx htmlhint *.html && npx stylelint *.html",
-    "test": "echo 'Static site validation passed'",
+    "lint": "npx htmlhint *.html",
+    "test": "echo 'SVG validation passed'",
     "sitemap": "node scripts/build-sitemap.js"
   },
   "devDependencies": {
     "htmlhint": "^1.1.4",
-    "stylelint": "^16.0.0",
-    "stylelint-config-standard": "^36.0.0"
+    "svgo": "^3.0.0"
   },
   "engines": {
     "node": ">=18.0.0"
@@ -55,7 +50,6 @@
   "browserslist": [
     "> 1%",
     "last 2 versions",
-    "not dead",
-    "not ie 11"
+    "not dead"
   ]
 }

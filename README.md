@@ -45,13 +45,15 @@
 
 | 技术 | 说明 |
 |------|------|
-| HTML5 | 语义化标签，无障碍支持 |
-| CSS3 | 渐变背景、暗黑模式、响应式布局 |
-| Vanilla JS | 无框架依赖，极致轻量 |
+| SVG | 矢量图形渲染，SMIL 原生动画 |
+| CSS3 | Neumorphism 新拟态设计，双方向阴影系统 |
+| Vanilla JS | 路径插值计算，贝塞尔曲线动态生成 |
+| Path2D | SVG 路径变形，实时 Morphing 动画 |
+| Filter Effects | SVG 滤镜系统，高斯模糊/发光/混合模式 |
 | GitHub Pages | 主站点托管，全球 CDN 加速 |
 | Cloudflare Pages | 边缘节点部署，自动镜像 |
 | Netlify | 自动构建部署，全球加速 |
-| PWA | Service Worker + Manifest，支持离线访问 |
+| PWA | Service Worker + Manifest，矢量资源离线缓存 |
 | CSP / 安全头 | 完整的 Content Security Policy 与 HTTP 安全头策略 |
 
 ---
