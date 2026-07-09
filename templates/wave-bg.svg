@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  wave-bg.svg - 可复用的 SVG 波浪背景模板
+  ====================================================================
+  多层叠加的波浪曲线 + 线性渐变，适合用作页面 / 卡片 / Hero 区背景。
+  自适应宽度（viewBox 宽 1440），可直接以 <img>、CSS background 或内联引用。
+
+  使用方式：
+    1) <img src="templates/wave-bg.svg" alt="" />
+    2) CSS： .hero { background: url('templates/wave-bg.svg') no-repeat center / cover; }
+    3) 内联：<svg viewBox="0 0 1440 320" ... role="img" aria-label="波浪背景">...</svg>
+
+  参数说明：
+    - 三层波浪 path 用 SMIL 做轻微的横向平移动画，形成「呼吸」效果。
+    - 颜色全部定义在 <defs> 的 <linearGradient> 中，便于二次调色。
+    - prefers-reduced-motion 下动画自动暂停（<style> 内媒体查询）。
+  ====================================================================
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1440 320"
+     preserveAspectRatio="xMidYMid slice"
+     role="img" aria-label="渐变波浪背景">
+  <defs>
+    <!-- 背景纵向渐变：深夜蓝 -> 暮光紫 -->
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#0f172a" />
+      <stop offset="55%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#312e81" />
+    </linearGradient>
+
+    <!-- 三层波浪各自渐变（带半透明，实现叠加混色） -->
+    <linearGradient id="waveGradient1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#38bdf8" stop-opacity="0.55" />
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.55" />
+    </linearGradient>
+    <linearGradient id="waveGradient2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#818cf8" stop-opacity="0.50" />
+      <stop offset="50%" stop-color="#c084fc" stop-opacity="0.40" />
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0.50" />
+    </linearGradient>
+    <linearGradient id="waveGradient3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"  stop-color="#22d3ee" stop-opacity="0.35" />
+      <stop offset="50%" stop-color="#a5b4fc" stop-opacity="0.30" />
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.35" />
+    </linearGradient>
+  </defs>
+
+  <!-- 减弱动画偏好：尊重用户系统设置 -->
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      animate, animateTransform { display: none; }
+    }
+  </style>
+
+  <!-- 底色 -->
+  <rect width="1440" height="320" fill="url(#bgGradient)" />
+
+  <!-- 第三层波浪（最远，最浅，移动最慢） -->
+  <g aria-hidden="true">
+    <path fill="url(#waveGradient3)"
+          d="M0 224 C 180 176 360 272 540 240 C 720 208 900 144 1080 160 C 1260 176 1380 240 1440 224 L1440 320 L0 320 Z">
+      <animateTransform attributeName="transform" attributeType="XML"
+                        type="translate" from="0 0" to="-120 0"
+                        dur="14s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- 第二层波浪（中景） -->
+  <g aria-hidden="true">
+    <path fill="url(#waveGradient2)"
+          d="M0 256 C 200 208 380 288 560 256 C 740 224 920 176 1100 192 C 1280 208 1380 256 1440 240 L1440 320 L0 320 Z">
+      <animateTransform attributeName="transform" attributeType="XML"
+                        type="translate" from="0 0" to="-80 0"
+                        dur="11s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- 第一层波浪（前景，最深，移动最快） -->
+  <g aria-hidden="true">
+    <path fill="url(#waveGradient1)"
+          d="M0 288 C 220 240 400 320 600 288 C 800 256 980 208 1160 224 C 1320 238 1400 288 1440 272 L1440 320 L0 320 Z">
+      <animateTransform attributeName="transform" attributeType="XML"
+                        type="translate" from="0 0" to="-60 0"
+                        dur="8s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- 顶部柔和光晕，增强纵深 -->
+  <ellipse cx="720" cy="0" rx="760" ry="120" fill="#ffffff" opacity="0.06" />
+</svg>

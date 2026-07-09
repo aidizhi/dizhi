@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  icon-sprite.svg - SVG 图标雪碧图
+  ====================================================================
+  使用 <symbol> 定义可复用图标，通过 <use href="#id"> 引用。
+  所有图标统一采用 24x24 视口，path 描边采用 currentColor，
+  因此可通过外层 CSS 的 color 属性统一控制颜色。
+
+  用法示例（外部引用）：
+    <svg class="icon" aria-hidden="true">
+      <use href="assets/svg/icon-sprite.svg#icon-home"></use>
+    </svg>
+
+  用法示例（内联同一文档内）：
+    <svg class="icon" aria-hidden="true"><use href="#icon-search"></use></svg>
+
+  建议配合 CSS：
+    .icon { width: 1em; height: 1em; fill: none; stroke: currentColor;
+            stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  ====================================================================
+-->
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     role="img" aria-hidden="true" focusable="false"
+     width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden">
+
+  <!-- ============ 首页 home ============ -->
+  <symbol id="icon-home" viewBox="0 0 24 24">
+    <path d="M3 11.5 12 3l9 8.5M5 10v10h5v-6h4v6h5V10"
+          fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
+
+  <!-- ============ 搜索 search ============ -->
+  <symbol id="icon-search" viewBox="0 0 24 24">
+    <circle cx="11" cy="11" r="7"
+            fill="none" stroke="currentColor" stroke-width="2" />
+    <path d="M16.5 16.5 21 21"
+          fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
+
+  <!-- ============ 设置 settings（齿轮） ============ -->
+  <symbol id="icon-settings" viewBox="0 0 24 24">
+    <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"
+          fill="none" stroke="currentColor" stroke-width="2" />
+    <path d="M19.4 13a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z"
+          fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
+
+  <!-- ============ 用户 user ============ -->
+  <symbol id="icon-user" viewBox="0 0 24 24">
+    <path d="M20 21a8 8 0 1 0-16 0"
+          fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" />
+    <circle cx="12" cy="7" r="4"
+            fill="none" stroke="currentColor" stroke-width="2" />
+  </symbol>
+
+  <!-- ============ 通知 bell ============ -->
+  <symbol id="icon-bell" viewBox="0 0 24 24">
+    <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"
+          fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M13.73 21a2 2 0 0 1-3.46 0"
+          fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
+
+  <!-- ============ 菜单 menu（汉堡） ============ -->
+  <symbol id="icon-menu" viewBox="0 0 24 24">
+    <path d="M3 6h18M3 12h18M3 18h18"
+          fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
+
+  <!-- ============ 附加图标：刷新 refresh ============ -->
+  <symbol id="icon-refresh" viewBox="0 0 24 24">
+    <path d="M23 4v6h-6M1 20v-6h6"
+          fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
+          fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
+
+  <!-- ============ 附加图标：下载 download ============ -->
+  <symbol id="icon-download" viewBox="0 0 24 24">
+    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"
+          fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" />
+    <path d="M7 10l5 5 5-5M12 15V3"
+          fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" />
+  </symbol>
+
+</svg>

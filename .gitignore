@@ -1,0 +1,57 @@
+# SVG 矢量图形项目 - 忽略规则
+# ====================================================================
+
+# 临时文件
+*.tmp
+*.temp
+
+# 缓存目录
+.cache/
+.cache
+*.cache
+
+# 备份文件
+*.bak
+*.orig
+*.rej
+
+# 设计源文件（不纳入版本库，仅保留导出后的 SVG）
+design-files/
+design-files
+
+# 导出产物目录（由构建脚本生成，不提交）
+exports/
+exports
+
+# 依赖与构建产物
+node_modules/
+dist/
+build/
+out/
+
+# 日志与运行时文件
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 编辑器 / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统生成文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 环境变量（含敏感信息不入库）
+.env
+.env.local
+.env.*.local
+
+# SVGO 优化缓存
+.svgo-cache/
