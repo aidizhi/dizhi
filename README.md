@@ -1,4 +1,4 @@
-#爱爱大学官方最新地址 视频 https://455555.xyz
+#爱爱大学最新地址 视频 官方 https://455555.xyz
 <p align="center">
   <img src="https://img.shields.io/badge/SVG--Morph-v2.0.0-7C3AED?style=for-the-badge&logo=svg&logoColor=white" alt="SVG-Morph v2.0.0" />
   <br/><br/>
