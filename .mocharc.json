@@ -1,0 +1,7 @@
+{
+  "require": [],
+  "recursive": true,
+  "reporter": "spec",
+  "spec": ["tests/**/*.test.js"],
+  "timeout": 5000
+}
